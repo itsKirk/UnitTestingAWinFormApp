@@ -36,6 +36,7 @@
             this.CancelButton = new System.Windows.Forms.Button();
             this.DisableCheckBox = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.PeopleLinkLabel = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // SaveButton
@@ -49,6 +50,7 @@
             this.SaveButton.TabIndex = 3;
             this.SaveButton.Text = "&Save";
             this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // label1
             // 
@@ -109,6 +111,7 @@
             this.DisableCheckBox.TabIndex = 5;
             this.DisableCheckBox.Text = "Disable";
             this.DisableCheckBox.UseVisualStyleBackColor = true;
+            this.DisableCheckBox.CheckedChanged += new System.EventHandler(this.DisableCheckBox_CheckedChanged);
             // 
             // label3
             // 
@@ -121,14 +124,25 @@
             this.label3.Text = "Person Creation Management";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // PeopleLinkLabel
+            // 
+            this.PeopleLinkLabel.AutoSize = true;
+            this.PeopleLinkLabel.Location = new System.Drawing.Point(371, 73);
+            this.PeopleLinkLabel.Name = "PeopleLinkLabel";
+            this.PeopleLinkLabel.Size = new System.Drawing.Size(82, 16);
+            this.PeopleLinkLabel.TabIndex = 8;
+            this.PeopleLinkLabel.TabStop = true;
+            this.PeopleLinkLabel.Text = "Vew People";
+            this.PeopleLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PeopleLinkLabel_LinkClicked);
+            // 
             // MainForm
             // 
             this.AcceptButton = this.SaveButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.CancelButton = this.CancelButton;
             this.ClientSize = new System.Drawing.Size(528, 259);
+            this.Controls.Add(this.PeopleLinkLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.DisableCheckBox);
             this.Controls.Add(this.CancelButton);
@@ -144,6 +158,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Screen";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +174,6 @@
         private Button CancelButton;
         private CheckBox DisableCheckBox;
         private Label label3;
+        private LinkLabel PeopleLinkLabel;
     }
 }
