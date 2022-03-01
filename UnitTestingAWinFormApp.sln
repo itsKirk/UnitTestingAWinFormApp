@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingAWinFormApp", "UnitTestingAWinFormApp\UnitTestingAWinFormApp.csproj", "{34D939B7-7C45-43BC-AA2A-DB9275B6E55E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34D939B7-7C45-43BC-AA2A-DB9275B6E55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D939B7-7C45-43BC-AA2A-DB9275B6E55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D939B7-7C45-43BC-AA2A-DB9275B6E55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D939B7-7C45-43BC-AA2A-DB9275B6E55E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD8966FA-6F16-48ED-847A-5E393803AE95}
+	EndGlobalSection
+EndGlobal
