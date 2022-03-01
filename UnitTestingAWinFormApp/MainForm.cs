@@ -6,5 +6,10 @@ namespace UnitTestingAWinFormApp
         {
             InitializeComponent();
         }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            firstNameTextBox.Clear(); lastNameTextBox.Clear();
+        }
     }
 }
